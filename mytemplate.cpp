@@ -25,8 +25,8 @@ string tostr(int x)
 }
 vector<int> sieve(int n)
 {
-	vector <int> res;
-	int temp=1;
+    vector <int> res;
+    int temp=1;
     for(int i=2;i<=n;i++)
     {
         for(int a=2;a<=i;a++)
