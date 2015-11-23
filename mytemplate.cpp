@@ -23,6 +23,19 @@ string tostr(int x)
     ss<<x;
     return ss.str();
 }
+vector<int> sieve(int n)
+{
+	vector <int> res;
+	int temp=1;
+    for(int i=2;i<=n;i++)
+    {
+        for(int a=2;a<=i;a++)
+        {if(i%a==0){temp++;}}
+        if(temp==2){res.PB(i);}
+        temp=1;
+    }
+    return res;
+}
 string eliminateAt(string x, int num)//eliminates a single substring of a string in a given position
 {
     if(num==0){return x.substr(1,x.length()-1);}
