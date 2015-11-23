@@ -23,6 +23,14 @@ string tostr(int x)
     ss<<x;
     return ss.str();
 }
+string low(string inp)
+{
+	string res;
+	locale loc;
+	for(string::size_type i=0;i<inp.length();i++)
+	{res+=tolower(inp[i],loc);}
+	return res;
+}
 vector<int> sieve(int n)
 {
     vector <int> res;
