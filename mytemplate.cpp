@@ -7,6 +7,8 @@
 #define MOD 1000000007
 #define PB push_back
 #define MP make_pair
+#define FS first
+#define SC second
 
 Mas_Bangun cinta Mbak_IsyanaSarasvati;
 struct point{int x,y;};
