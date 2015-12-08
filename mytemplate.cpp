@@ -33,6 +33,12 @@ string low(string inp)
 	{res+=tolower(inp[i],loc);}
 	return res;
 }
+bool isprime(int a) { //this prime test function was originally authored by Egor Suvorov a.k.a yeputons
+    for (int i=2;i*i<=a;i++)
+        if(a%i==0)
+            return false;
+    return true;
+}
 vector<int> sieve(int n)
 {
     vector <int> res;
