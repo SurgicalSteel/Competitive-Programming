@@ -11,6 +11,26 @@
 #define SC second
 
 Mas_Bangun cinta Mbak_IsyanaSarasvati;
+/*
+	Leave the sleep and let the springtime talk
+	In tongues from the time before man
+	Listen to a daffodil tell her tale
+	Let the guest in, walk out, be the first to greet the morn
+
+	The meadows of heaven await harvest
+	The cliffs unjumped, cold waters untouched
+	The elsewhere creatures yet unseen
+	Finally your number came up, free fall awaits the brave
+
+	Come
+	Taste the wine, race the blind
+	They will guide you from the light
+	Writing noughts till the end of time
+	Come
+	Surf the clouds, race the dark
+	It feeds from the runs undone
+	Meet me where the cliff greets the sea
+*/
 struct point{int x,y;};
 int toInt(string x)
 {
