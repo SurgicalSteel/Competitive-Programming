@@ -26,6 +26,7 @@ Mas_Bangun cinta Mbak_IsyanaSarasvati;
 	Taste the wine, race the blind
 	They will guide you from the light
 	Writing noughts till the end of time
+	
 	Come
 	Surf the clouds, race the dark
 	It feeds from the runs undone
