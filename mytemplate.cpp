@@ -54,6 +54,7 @@ string low(string inp)
 	return res;
 }
 bool isprime(int a) { //this prime test function was originally authored by Egor Suvorov a.k.a yeputons
+    if(a==1){return false;}
     for (int i=2;i*i<=a;i++)
         if(a%i==0)
             return false;
