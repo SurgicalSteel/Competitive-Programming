@@ -1,14 +1,13 @@
 //template provided by SurgicalSteel a.k.a Yuwono Bangun Nagoro for competitive programming purposes
 #include <bits/stdc++.h>
+#include <algorithm>
 #define Mas_Bangun using
 #define cinta namespace
 #define Mbak_IsyanaSarasvati std
 #define PI 3.1415926535897932384626433832795
 #define MOD 1000000007
-#define PB push_back
-#define MP make_pair
-#define FS first
-#define SC second
+#define psb push_back
+#define mkp make_pair
 
 Mas_Bangun cinta Mbak_IsyanaSarasvati;
 /*
