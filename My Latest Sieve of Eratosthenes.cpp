@@ -1,29 +1,44 @@
 #include <bits/stdc++.h>
-#define pb push_back
-#define Mas_Bangun using
-#define cinta namespace
-#define Mbak_RaniApriana std
-Mas_Bangun cinta Mbak_RaniApriana;
-void generatePrima(int n)
-{
-    int temp=1;
-    for(int i=2;i<=n;i++)
-    {
-        for(int a=2;a<=i;a++)
-        {if(i%a==0){temp++;}}
-        if(temp==2){cout<<i<<"\n";}
-        temp=1;
-    }
-}
+#include <algorithm>
+using namespace std;
+//Sieve of Eratosthenes
+//Created by Yuwono Bangun Nagoro a.k.a SurgicalSteel
+//Still needs some improvements
 int main()
 {
-    //MAIN SECTION GOES HERE
-    /* //In case you wanna read and write file, use them like cin and cout
-    fstream fin("input.txt");
-    fstream fout("output.txt");
-    */
-    int test;
-    cin>>test;
-    generatePrima(test);
+	int num,first=0;
+	scanf("%d",&num);
+	vector<int> v;
+	vector<int> vres;
+	for(int i=1;i<num;i++)
+	{v.push_back(i+1);}
+	int cek=0;
+	while(cek<v.size())
+	{
+		bool stop=false;
+		first=0;
+		while(first<v.size()&&!stop)
+		{
+			if(v[first]!=-1){stop=true;}
+			else{first++;}
+		}
+		if(v[first]!=-1)
+		{
+			int temp=v[first];
+			vres.push_back(temp);
+			v[first]=-1;
+			cek++;
+			for(int i=first+1;i<v.size();i++)
+			{
+				if(v[i]!=temp&&v[i]%temp==0&&v[i]!=-1)
+				{
+					v[i]=-1;
+					cek++;
+				}
+			}
+		}
+	}
+	for(int i=0;i<vres.size();i++)
+	{printf("%d\n",vres[i]);}
     return 0;
 }
