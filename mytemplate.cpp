@@ -157,7 +157,7 @@ int binarysearch(vector<int> a, int val) //requires a sorted vector, will return
             if (m == l) { m++; }
             l = m;
         }
-        if (a[m] == val) { return m; }
+        if (a[m] == val) { return m; }//return the index
     }
     return -1;
 }
