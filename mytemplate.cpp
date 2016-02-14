@@ -139,6 +139,28 @@ string tobase(int num,int base) //translates bitmask from decimal number to base
   }
   return reverse(a);
 }
+int binarysearch(vector<int> a, int val) //requires a sorted vector, will return -1 if there's no such element exists in the vector
+{
+    if (a.size() == 0) { return -1; }
+    int l = 0;
+    int r = a.size() - 1;
+    while (l < r)
+    {
+        int m = (l + r) / 2;
+        if (a[m] > val)
+        {
+        	if (m == r) { m--; }
+    	    r = m;
+        }
+        if (a[m] < val)
+        {
+            if (m == l) { m++; }
+            l = m;
+        }
+        if (a[m] == val) { return m; }
+    }
+    return -1;
+}
 int main()
 {
     //MAIN SECTION GOES HERE
