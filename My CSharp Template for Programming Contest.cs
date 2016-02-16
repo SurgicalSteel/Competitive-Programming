@@ -29,7 +29,7 @@ namespace myCSharpTemplate
 		//Listen, I haven't test them all, but I think they are good enough.
 		//by Yuwono Bangun Nagoro a.k.a SurgicalSteel
 		const Double PI = 3.1415926535897932384626433832795;
-		const int mod = 1000000007;
+		const int MOD = 1000000007;
 		struct point{public int x; public int y;};
 		static int getsinglenum(string a)//converts a single string into decimal ASCII
 		{
