@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 //Sieve of Eratosthenes
-//Created by Yuwono Bangun Nagoro a.k.a SurgicalSteel
+//Created by Yuwono Bangun Nagoro a.k.a SurgicalSteel using Dynamic Programming Approach
 //Still needs some improvements
 int main()
 {
