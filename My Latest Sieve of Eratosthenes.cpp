@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 //Sieve of Eratosthenes
-//Created by Yuwono Bangun Nagoro a.k.a SurgicalSteel using Dynamic Programming Approach
+//Created by Yuwono Bangun Nagoro a.k.a SurgicalSteel
 //Still needs some improvements
 int main()
 {
@@ -28,13 +28,15 @@ int main()
 			vres.push_back(temp);
 			v[first]=-1;
 			cek++;
-			for(int i=first+1;i<v.size();i++)
+			int i=first;
+			while(i<v.size())
 			{
 				if(v[i]!=temp&&v[i]%temp==0&&v[i]!=-1)
 				{
 					v[i]=-1;
 					cek++;
 				}
+				i+=temp;
 			}
 		}
 	}
