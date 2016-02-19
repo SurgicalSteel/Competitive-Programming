@@ -68,7 +68,7 @@ vector<int> sieve(int n)
     {
         for(int a=2;a<=i;a++)
         {if(i%a==0){temp++;}}
-        if(temp==2){res.PB(i);}
+        if(temp==2){res.psb(i);}
         temp=1;
     }
     return res;
