@@ -84,7 +84,7 @@ long long factorial(int num) //finds factorial of given integer
   if(num==0){return 1;}
   else{return num*factorial(num-1);}
 }
-long long pangkatp(int base,int exp) //powers base by exponen
+long long pangkatp(int base,int exp) //powers base by exponent
 {
     if(exp==0){return 1;}
     else{return base*pangkatp(base,exp-1);}
