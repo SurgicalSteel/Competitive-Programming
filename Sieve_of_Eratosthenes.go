@@ -2,8 +2,8 @@ package main
 import "fmt"
 
 func main(){
-	var sz int=100000
-	var arr [99999]int
+	var sz int=1000
+	var arr = make([]int,sz)
 	for x:=0;x<sz-1;x++{
 		arr[x]=x+2
 	}
