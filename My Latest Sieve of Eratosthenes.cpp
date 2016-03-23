@@ -3,44 +3,28 @@
 using namespace std;
 //Sieve of Eratosthenes
 //Created by Yuwono Bangun Nagoro a.k.a SurgicalSteel
-//Still needs some improvements
 int main()
 {
 	int num,first=0;
 	scanf("%d",&num);
 	vector<int> v;
-	vector<int> vres;
-	for(int i=1;i<num;i++)
-	{v.push_back(i+1);}
-	int cek=0;
-	while(cek<v.size())
+	for(int i=0;i<num-1;++i)
+	{v.push_back(i+2);}
+	int check=0,ptr=0;
+	while(check<v.size())
 	{
-		bool stop=false;
-		first=0;
-		while(first<v.size()&&!stop)
+		while(ptr<v.size())
 		{
-			if(v[first]!=-1){stop=true;}
-			else{first++;}
-		}
-		if(v[first]!=-1)
-		{
-			int temp=v[first];
-			vres.push_back(temp);
-			v[first]=-1;
-			cek++;
-			int i=first;
-			while(i<v.size())
+			if(v[ptr]!=-1)
 			{
-				if(v[i]!=temp&&v[i]%temp==0&&v[i]!=-1)
-				{
-					v[i]=-1;
-					cek++;
-				}
-				i+=temp;
+				check++;
+				for(int i=ptr;i<v.size();++i)
+				{if(v[i]!=-1&&v[i]%v[ptr]==0&&i!=ptr){v[i]=-1;check++;}}
 			}
+			ptr++;
 		}
-	}
-	for(int i=0;i<vres.size();i++)
-	{printf("%d\n",vres[i]);}
+	}	
+	for(int i=0;i<v.size();i++)
+	{if(v[i]!=-1){printf("%d\n",v[i]);}}
     return 0;
 }
