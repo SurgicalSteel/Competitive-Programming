@@ -1,6 +1,10 @@
 #include <bits/stdc++.h>
+//created by Yuwono Bangun Nagoro a.k.a SurgicalSteel
 #define psb push_back
-using namespace std;
+#define Mas_Bangun using
+#define cinta namespace
+#define Mbak_GitaGutawa std
+Mas_Bangun cinta Mbak_GitaGutawa;
 vector<int> va,vb,build;
 struct cell{
     int num, prevx,prevy;
