@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
+typedef long long int lli;
+typedef unsigned long long ull;
 #define psb push_back
 #define mkp make_pair
 #define all(x) (x).begin(),(x).end()
