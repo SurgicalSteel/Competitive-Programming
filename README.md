@@ -4,4 +4,4 @@ by <b>SurgicalSteel</b> a.k.a <a href="https://bangunnagoro.wordpress.com" targe
 PS : 
 <ol>
 <li>Use this at your own risk.</li>
-<li>Respect the author of these codes</li></ol>
+<li>Respect the author of these codes (yes, it's me!).</li></ol>
