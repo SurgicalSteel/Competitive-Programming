@@ -21,7 +21,7 @@ string tostr(int x)
     return ss.str();
 }
 int main() {
-	int b[5],n,t,m=0,d;
+    int b[5],n,t,m=0,d;
     memset(b,0,sizeof(b));
     cin>>n;
     while(n--){
