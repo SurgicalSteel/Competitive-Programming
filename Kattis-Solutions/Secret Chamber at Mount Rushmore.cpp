@@ -38,26 +38,25 @@ bool reachable(int a,int b)//from a to b using dfs
 {
     int discovered[26];
     memset(discovered,0,sizeof(discovered));
-	if (a==b){return true;}
-	int cur;
-	stack<int> sta;
-	sta.push(a);
-	while(sta.size()>0){
-		cur=sta.top();
-		sta.pop();
+    if (a==b){return true;}
+    int cur;
+    stack<int> sta;
+    sta.push(a);
+    while(sta.size()>0){
+	cur=sta.top();
+	sta.pop();
         discovered[cur]++;
-		if (cur==b){
-			return true;
-		}else{
-			for(int i=0;i<graph[cur].size();i++){
+	if (cur==b){
+	    return true;
+	}else{
+	    for(int i=0;i<graph[cur].size();i++){
                 if (discovered[graph[cur][i]]==0){
                     sta.push(graph[cur][i]);
                 }
-
-			}
-		}
+	    }
 	}
-	return false;
+    }
+    return false;
 }
 void addConnection(int a,int b){
 	graph[a].psb(b);
