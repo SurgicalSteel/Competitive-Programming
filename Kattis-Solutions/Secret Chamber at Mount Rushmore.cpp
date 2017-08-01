@@ -22,16 +22,16 @@ string tostr(int x)
 }
 char toCharSingle(string x)//single substring as input. Converts single substring to single char
 {
-  char a[1];
-  strncpy(a,x.c_str(),sizeof(a));
-  return a[0];
+    char a[1];
+    strncpy(a,x.c_str(),sizeof(a));
+    return a[0];
 }
 
 vector<int> graph[26];
 bool finder(vector<int> v, int x)
 {
-	vector<int>::iterator it=find(all(v),x);
-	return !(it==v.end());
+    vector<int>::iterator it=find(all(v),x);
+    return !(it==v.end());
 }
 
 bool reachable(int a,int b)//from a to b using dfs
@@ -43,18 +43,18 @@ bool reachable(int a,int b)//from a to b using dfs
     stack<int> sta;
     sta.push(a);
     while(sta.size()>0){
-	cur=sta.top();
-	sta.pop();
+    	cur=sta.top();
+    	sta.pop();
         discovered[cur]++;
-	if (cur==b){
-	    return true;
-	}else{
-	    for(int i=0;i<graph[cur].size();i++){
+    	if (cur==b){
+    	    return true;
+    	}else{
+    	    for(int i=0;i<graph[cur].size();i++){
                 if (discovered[graph[cur][i]]==0){
                     sta.push(graph[cur][i]);
                 }
-	    }
-	}
+    	    }
+    	}
     }
     return false;
 }
