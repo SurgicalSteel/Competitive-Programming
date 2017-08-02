@@ -59,38 +59,37 @@ bool reachable(int a,int b)//from a to b using dfs
     return false;
 }
 void addConnection(int a,int b){
-	graph[a].psb(b);
+    graph[a].psb(b);
 }
 int main() {
-	// your code goes here
-	int ne,np,j;
-	string sa,sb;
-	bool reach;
+    // your code goes here
+    int ne,np,j;
+    string sa,sb;
+    bool reach;
     cin>>ne>>np;
-	for(int i=0;i<ne;i++){
-		cin>>sa>>sb;
-		addConnection(int(toCharSingle(sa))-97,int(toCharSingle(sb))-97);
+    for(int i=0;i<ne;i++){
+  	cin>>sa>>sb;
+	addConnection(int(toCharSingle(sa))-97,int(toCharSingle(sb))-97);
+    }
+    for(int k=0;k<np;k++){
+	cin>>sa>>sb;
+	if(sa.length()!=sb.length()){
+	    cout<<"no\n";
+	}else{ //equal length, then check reachability
+	    j=0;
+            reach=true;
+            while(j<sa.length()&&reach){
+		//cout<<(int(toCharSingle(sa.substr(j,1)))-97)<<" "<<(int(toCharSingle(sb.substr(j,1)))-97)<<"\n";
+	        reach=reachable((int(toCharSingle(sa.substr(j,1)))-97),(int(toCharSingle(sb.substr(j,1)))-97));
+	        //cout<<"test "<<reach<<"\n";
+                j++;
+	    }
+	    if (reach){
+	        cout<<"yes\n";
+	    }else{
+	        cout<<"no\n";
+            }
 	}
-
-	for(int k=0;k<np;k++){
-		cin>>sa>>sb;
-		if(sa.length()!=sb.length()){
-			cout<<"no\n";
-		}else{ //equal length, then check reachability
-			j=0;
-			reach=true;
-			while(j<sa.length()&&reach){
-				//cout<<(int(toCharSingle(sa.substr(j,1)))-97)<<" "<<(int(toCharSingle(sb.substr(j,1)))-97)<<"\n";
-				reach=reachable((int(toCharSingle(sa.substr(j,1)))-97),(int(toCharSingle(sb.substr(j,1)))-97));
-				//cout<<"test "<<reach<<"\n";
-				j++;
-			}
-			if (reach){
-				cout<<"yes\n";
-			}else{
-				cout<<"no\n";
-			}
-		}
-	}
-	return 0;
+    }
+    return 0;
 }
