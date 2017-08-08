@@ -32,7 +32,7 @@ int counter(int n){
 	}
 	n--;
 	int sum=0,left,right;
-	for(int i=0;i<=n;i++){
+	for(int i=0;i<=n;i++){ //for every possible split in each subtree
 		left = counter(i);
 		right = counter(n-i);
 		sum+= left*right;
