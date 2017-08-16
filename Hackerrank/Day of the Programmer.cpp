@@ -1,12 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-int toInt(string x)
-{
-    istringstream ss(x);
-    int a;
-    ss>>a;
-    return a;
-}
 string tostr(int x)
 {
     ostringstream ss;
