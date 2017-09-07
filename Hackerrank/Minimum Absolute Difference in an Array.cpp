@@ -21,8 +21,8 @@ string tostr(int x)
     return ss.str();
 }
 int main() {
-	// your code goes here
-	vector<int> v;
+    // your code goes here
+    vector<int> v;
     int n,t;
     int mini=1000000000;
     scanf("%d",&n);
@@ -35,5 +35,5 @@ int main() {
         mini=min(abs(v[i]-v[i+1]),mini);
     }
     printf("%d\n",mini);
-	return 0;
+    return 0;
 }
