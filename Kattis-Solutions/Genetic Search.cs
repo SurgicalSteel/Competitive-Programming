@@ -8,9 +8,9 @@ namespace Solution
     class Solution
     {
         static string eliminateAt(string x, int num){
-			      if(num==0){return x.Substring(1,x.Length-1);}
-			      else if(num==x.Length-1){return x.Substring(0,x.Length-1);}
-			      else{return x.Substring(0,num)+x.Substring(num+1,x.Length-num-1);}
+	    if(num==0){return x.Substring(1,x.Length-1);}
+	    else if(num==x.Length-1){return x.Substring(0,x.Length-1);}
+	    else{return x.Substring(0,num)+x.Substring(num+1,x.Length-num-1);}
         }
         static string insertAt(string s, string l, int pos){
             if (pos==0){return s+l;}
