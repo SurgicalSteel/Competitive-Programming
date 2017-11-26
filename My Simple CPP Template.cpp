@@ -5,9 +5,9 @@ typedef unsigned long long ull;
 #define psb push_back
 #define mkp make_pair
 #define all(x) (x).begin(),(x).end()
-#define PI 3.1415926535897932384626433832795
+#define PI acos(-1)
 #define MOD 1000000007
-int toInt(string x)
+int toint(string x)
 {
     istringstream ss(x);
     int a;
@@ -21,7 +21,7 @@ string tostr(int x)
     return ss.str();
 }
 int main() {
-	// your code goes here
+    // your code goes here
 	
-	return 0;
+    return 0;
 }
