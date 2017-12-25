@@ -20,6 +20,10 @@ string tostr(int x)
     ss<<x;
     return ss.str();
 }
+void precalc(){
+
+}
+
 int main() {
     // your code goes here
 	
