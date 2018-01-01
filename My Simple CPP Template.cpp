@@ -23,9 +23,17 @@ string tostr(int x)
 void precalc(){
 
 }
-
+void gcji(int caseorder,int res){
+    printf("Case #%d: %d\n",caseorder,res);
+}
+void gcjs(int caseorder,string res){
+    cout<<"Case #"<<caseorder<<": "<<res<<"\n";
+}
+void gcjf(int caseorder,float res){
+    printf("Case #%d: %.15f\n",caseorder,res);
+}
 int main() {
     // your code goes here
-	
+    
     return 0;
 }
