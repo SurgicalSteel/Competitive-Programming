@@ -37,7 +37,7 @@ func main() {
 	for i := 0; i < n; i++ {
 		stemp, _ = reader.ReadString('\n')
 		stemp = strings.TrimSpace(stemp)
-        sarr := strings.Split(stemp, " ")
+		sarr := strings.Split(stemp, " ")
 		if len(sarr) == 0 {
 			break
 		}
@@ -89,7 +89,7 @@ func main() {
 	for _, vbow := range bow {
 		useall := true
 		for km, _ := range m {
-            currentpm := m[km]
+			currentpm := m[km]
 			if _, okpw := currentpm[vbow.word]; !okpw {
 				useall = false
 			}
