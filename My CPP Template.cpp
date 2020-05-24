@@ -1,16 +1,13 @@
 //template provided by Yuwono Bangun Nagoro a.k.a SurgicalSteel for competitive programming purposes
 #include <bits/stdc++.h>
 #include <algorithm>
-#define Mas_Bangun using
-#define cinta namespace
-#define Mbak_IsyanaSarasvati std
 #define acos(-1)
 #define MOD 1000000007
 #define psb push_back
 #define mkp make_pair
 #define all(x) (x).begin(),(x).end()
 
-Mas_Bangun cinta Mbak_IsyanaSarasvati;
+using namespace std;
 
 typedef long long int lli;
 typedef unsigned long long ull;
