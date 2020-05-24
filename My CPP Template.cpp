@@ -1,4 +1,4 @@
-//template provided by SurgicalSteel a.k.a Yuwono Bangun Nagoro for competitive programming purposes
+//template provided by Yuwono Bangun Nagoro a.k.a SurgicalSteel for competitive programming purposes
 #include <bits/stdc++.h>
 #include <algorithm>
 #define Mas_Bangun using
