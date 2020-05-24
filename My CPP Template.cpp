@@ -4,12 +4,16 @@
 #define Mas_Bangun using
 #define cinta namespace
 #define Mbak_IsyanaSarasvati std
-#define PI 3.1415926535897932384626433832795
+#define acos(-1)
 #define MOD 1000000007
 #define psb push_back
 #define mkp make_pair
+#define all(x) (x).begin(),(x).end()
 
 Mas_Bangun cinta Mbak_IsyanaSarasvati;
+
+typedef long long int lli;
+typedef unsigned long long ull;
 /*
 	Leave the sleep and let the springtime talk
 	In tongues from the time before man
