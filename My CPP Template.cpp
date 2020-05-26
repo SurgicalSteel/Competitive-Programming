@@ -1,7 +1,7 @@
 //template provided by Yuwono Bangun Nagoro a.k.a SurgicalSteel for competitive programming purposes
 #include <bits/stdc++.h>
 #include <algorithm>
-#define acos(-1)
+#define PI acos(-1)
 #define MOD 1000000007
 #define psb push_back
 #define mkp make_pair
